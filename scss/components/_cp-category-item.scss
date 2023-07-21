@@ -1,0 +1,24 @@
+.category-item {
+    gap: 13px;
+    .icon {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+    }   
+    .content {
+        .category-name {
+            color: var(--title-color, #070C3E);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .item-number {
+            color: #6A6E9A;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

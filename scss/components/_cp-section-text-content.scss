@@ -1,0 +1,32 @@
+.section-text-content {
+    margin-bottom: 50px;
+}
+
+.section-heading {
+    // font-family: $font-roboto;
+    @include toRem(font-size, 36);
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: capitalize;
+    color: $color-title;
+    margin-bottom: 22px;
+    text-align: center;
+    color: #1D2746;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 30px;
+
+    &--style-2 {
+        border-bottom: none;
+        margin: 0;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+}
+.para-text {
+    // font-family: $font-roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color:#6B707F;
+    @include transition
+}

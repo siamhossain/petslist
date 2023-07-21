@@ -1,0 +1,35 @@
+.location-dropdown-wrapper {
+    background-color: $color-white;
+    border-radius: 100px;
+    padding: 0 20px 0 16px ;
+    width: 215px;
+    height: 48px;
+    .icon {
+        color: #6A6D8B;
+        margin-right: 5px;
+        i {
+            font-size: 20px;
+        }
+    }
+    form.location-dropdown {
+        
+        .location-selector {
+            .nice-select {
+                padding-left: 0;
+                padding-right: 40px;
+                width: 145px;
+                span {
+                    color: #6A6D8B;
+                    font-family: $font-plus-jakarta;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }   
+        }
+    }
+}
+
+.location-search-wrapper {
+    gap: 13px;
+}

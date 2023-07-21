@@ -1,0 +1,21 @@
+.pages-dropdown-wrapper {
+    .pages-dropdown {
+        .nice-select {
+            width: 100px;
+            span {
+                color: $color-white;
+                font-family: $font-plus-jakarta;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: normal;
+            }
+            &:after {
+                border-color: $color-white;
+                right: 20px;
+            }
+            .list {
+                left: -15%;
+            }
+        }
+    }
+}
