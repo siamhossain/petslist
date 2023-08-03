@@ -242,3 +242,39 @@
   // border: 1px solid $color-black;
   color: $color-white;
 }
+
+
+.btn-anim {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  &::before, &::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-top: 25px solid #CD1B1E;;
+      border-bottom: 25px solid #CD1B1E;;
+      @include transition;
+      z-index: -1;
+    }
+    &::before {
+      border-right: 25px solid transparent;
+      transform: translateX(-100%);
+    }
+    &::after {
+      border-left: 25px solid transparent;
+      transform: translateX(100%);
+    }
+    &:hover {
+      border: 1px solid #CD1B1E;;
+      &::before {
+        transform: translateX(-25%);
+      }
+      &::after {
+        transform: translateX(25%);
+      }
+    }
+}

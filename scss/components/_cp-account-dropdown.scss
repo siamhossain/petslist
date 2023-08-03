@@ -1,0 +1,46 @@
+
+
+
+.account-dropdown-wrapper {
+    .account-dropdown {
+        i {
+            color: $color-primary;
+            font-size: 25px;
+        }
+        .nice-select {
+            width: 100px;
+            padding-left: 4px;
+            span {
+                color: #515167;
+                font-family: $font-plus-jakarta;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: normal;
+            }
+            &:after {
+                border-color: #515167;
+                right: 15px;
+                top: 47%;
+            }
+            .list {
+                left: -15%;
+            }
+        }
+    }
+}
+
+.account-btn-wrapper {
+    .account-btn {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        i {
+            font-size: 25px;
+        }
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}

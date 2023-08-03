@@ -12,6 +12,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            margin-bottom: 3px;
         }
         .item-number {
             color: #6A6E9A;
@@ -20,5 +21,122 @@
             font-weight: 500;
             line-height: normal;
         }
+    }
+    &:hover {
+        .icon {
+            img {
+                animation: fadeInBottomLeft 0.5s forwards;
+            }
+        }
+    }
+
+    &--style-2 {
+        .icon {
+            margin-bottom: 10px;
+        }
+        .content {
+            .category-name {
+                color: $color-white;
+                display: inline-block;
+            }
+            .item-number {
+                display: inline-block;
+            }
+        }
+    }
+    &--style-3 {
+        border-radius: 8px;
+        border: 1px solid #E9E9E9;
+        background: linear-gradient(90deg, #F8F8F8 0%, #FFF 100%);
+        padding: 15px 17px;
+        margin-bottom: 6px;
+        gap: 10px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 0;
+        
+        .icon {
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+        }
+        .content {
+            gap: 5px;
+            .category-name {
+                color: #515167;
+                font-size: 17px;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+        }
+
+        
+        &:hover {
+            .content {
+                .category-name {
+                    color: $color-primary;
+                    @include transition;
+                }
+                .item-number {
+                    // color: $color-white;
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &--style-4 {
+        gap: 10px;
+        .content {
+            
+        }
+    }
+    &--style-5 {
+        .icon { 
+            z-index: 0;
+            width: unset;
+            height: unset;
+            position: relative;
+            margin-bottom: 8px;
+            .cat-shape-bg {
+                position: relative;
+                z-index: 1;
+            }
+            .cat-icon {
+                position: absolute;
+                z-index: 2;
+            }
+        }
+        gap: 10px;
+        .content {
+            gap: 4px;
+        }
+        &:hover {
+            .icon {
+                .cat-shape-bg { 
+                    animation: unset;
+                }
+            }
+        }
+    }
+}
+
+.add-state-btn {
+    background-color: $color-secondary;
+    border: none;
+    border-radius: 100px;
+    width: 250px;
+    height: 111px;
+    color: $color-white;
+    font-family: $font-bhaijaan;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0px; 
+    text-transform: capitalize;
+    i {
+        font-size: 18px;
     }
 }

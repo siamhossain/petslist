@@ -1,0 +1,33 @@
+.app-banner-section {
+    background-image: url("../images/app-banner/app-banner-bg.jpg");
+    @include background-content;
+
+    .app-banner-img-wrapper {
+        .app-banner-img-list {
+            gap: 40px;
+        }
+    }
+}
+
+.app-banner-content {
+    padding: 74px 0;
+    .title-content {
+        margin-bottom: 28px;
+        .title {
+            color: $color-white;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .sub-title {
+            color: $color-white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+    .app-buttons {
+        gap: 12px;
+    }
+}
+

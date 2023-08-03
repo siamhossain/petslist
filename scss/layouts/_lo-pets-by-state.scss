@@ -1,0 +1,35 @@
+.pets-by-state {
+    &--style-2 {
+        background-image: url("../images/state/state-section-bg-2.jpg");
+        @include background-content;
+        padding: 197px 0 121px 0;
+        .title-content {
+            .sub-title {
+                color: #B1B1B1;
+            }
+            .title {
+                color: $color-white;
+            }
+        }
+        .state-item {
+            box-shadow: none;
+            border: 1px solid #E6E6E6;
+        }
+        .see-all-btn {
+            margin-bottom: 20px;
+            @include media-only ('xs', min) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.state-main-wrapper {
+    background-image: url("../images/state/state-section-bg.jpg");
+    @include background-content;
+    padding: 61px 55px 75px 55px;
+    border-radius: 20px;
+    .state-wrapper {
+        gap: 10px;
+    }
+}

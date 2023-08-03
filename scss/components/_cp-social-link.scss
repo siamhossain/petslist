@@ -1,0 +1,74 @@
+.footer-social-wrapper {
+    ul {
+        gap: 10px;
+        li {
+            a {
+                width: 44px;
+                height: 44px;
+                border: 1px solid #3D4164;
+                color: $color-white;
+                &:hover {
+                    i {
+                        animation: toBottomFromTop 0.5s forwards;
+                    }
+                }
+            }
+            .facebook {
+                &:hover {
+                    background-color: #4267B2;
+                    border-color: #4267B2;
+                }
+            }
+            .twitter {
+                &:hover {
+                    background-color: #00acee;
+                    border-color: #00acee;
+                }
+                
+            }
+            .instagram {
+                &:hover {
+                    background-color: #833AB4;
+                    border-color: #833AB4;
+                }
+                
+            }
+            .pinterest {
+                &:hover {
+                    background-color: #c8232c;
+                    border-color: #c8232c;
+                }
+            }
+        }
+    }
+
+    &--style-2 {
+        ul {
+            gap: 10px;
+            li {
+                a { 
+                    background-color: #F3F3FA;
+                    color: $color-title;
+                    border: 1px solid #F3F3FA;
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    &--style-3 {
+        ul {
+            gap: 10px;
+            li {
+                a { 
+                    background-color: #31355B;
+                    border: 1px solid #31355B;
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

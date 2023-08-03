@@ -3,7 +3,7 @@
 =================================*/
 
 .pagination-wrapper {
-    margin-top: 50px;
+    margin-top: 25px;
     // display: inline-block;
     margin-bottom: 25px;
     @include media-only('md', min) {
@@ -11,27 +11,36 @@
     }
     ul.pagination {
         .active {
-            background: #0289FF;
+            background: #070C3E;
             color: $color-white;
         }
-        gap: 5px;
+        gap: 8px;
         li {
             a {
-                // font-family: $font-roboto;
-                font-weight: 500;
-                @include toRem(font-size, 16);
-                line-height: 19px;
                 color: $color-title;
-                background: #F7F7F7;
-                border-radius: 5px;
+                font-family: $font-plus-jakarta;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: normal;
+                width: 50px;
+                height: 50px;
+                background-color: #F3F3F3;
                 border: none;
-                padding: 8px 13px;
                 &:hover {
-                    background: #0289FF;
+                    background: #070C3E;
                     color: $color-white;
+                }
+                &:first-child {
+                    border-top-left-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                }
+                &:last-child {
+                    border-top-right-radius: 50%;
+                    border-bottom-right-radius: 50%;
                 }
             }
         }
+
     }
 
     &--style-2 {

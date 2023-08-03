@@ -1,0 +1,247 @@
+.banner-content-wrapper {
+    background-image: url("../images/banner/banner-bg.png");
+    @include background-content;
+    // height: 280px;
+    border-radius: 30px;
+    padding: 75px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -90px;
+    z-index: 1;
+    .title-content {
+        position: relative;
+        z-index: 0;
+        .title {
+            color: #FFF;
+            font-family: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 65px;
+            
+            @include media-only ('sm', min) {
+                font-size: 50px;
+            }
+        }
+        .banner-title-shape {
+            // width: 165.149px;   
+            // height: 73.02px;
+            position: absolute;
+            top: -5px;
+            left: -4px;
+            right: 0;
+            margin: 0 auto;
+            z-index: -1;
+        }
+    }
+
+    &::before {
+        content: url("../images/banner/banner-img-1.png");
+        position: absolute;
+        left: 30px;
+        bottom: -8px;
+        z-index: -1;
+        animation: fadeInUp 1s forwards;
+        // @include media-only(1400px, min) {
+        //     left: 19.4%;
+        // }
+        
+    }
+    &::after {
+        content: url("../images/banner/banner-img-2.png");
+        position: absolute;
+        right: 55px;
+        bottom: -8px;
+        z-index: -1;
+        animation: fadeInUp 1s forwards;
+    }
+
+    &--style-2 {
+        padding: 0 62px 0 46px;
+        margin-bottom: 0;
+        margin-bottom: 30px;
+        @include media-only ('md', min) {
+            margin-bottom: 0;
+        }
+        .title-content {
+            width: 268px;
+            .title {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 36px;
+                margin-bottom: 13px;
+            }
+        }
+        background-image: url("../images/banner/banner-bg-2.jpg");
+        height: 230px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    &--style-3 {
+        padding: 0 28px 0 52px;
+        margin-bottom: 0;
+        .title-content {
+            .see-all-btn {
+                border: 1px solid #FFF;
+                background: #1F1F28 !important;
+                &:hover {
+                    border: 1px solid #CD1B1E;
+                }
+            }
+            width: 268px;
+            .title {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 36px;
+                margin-bottom: 13px;
+            }
+        }
+        background-image: url("../images/banner/banner-bg-3.jpg");
+        height: 230px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    &--style-4 {
+        padding: 0 28px 0 52px;
+        margin-bottom: 0;
+        border-radius: 15px;
+        background-image: url("../images/banner/banner-bg-3.jpg");
+        height: 185px;
+        margin-bottom: 30px;
+        @include media-only ('md', min) {
+            margin-bottom: 0;
+        }
+        .title-content {
+            width: 245px;
+            .title {
+                color: #0B0B14;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 30px;
+                margin-bottom: 11px;
+            }
+            .see-all-btn {
+                border: 1px solid #1F1F28;
+                background: #1F1F28 !important;
+                &:hover {
+                    border: 1px solid #CD1B1E;
+                }
+            }
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    &--style-5 {
+        background-image: url("../images/banner/banner-bg-2.jpg");
+        padding: 0 62px 0 46px;
+        margin-bottom: 0;
+        // margin-bottom: 30px;
+        height: 185px;
+        border-radius: 15px;
+        @include media-only ('md', min) {
+            margin-bottom: 0;
+        }
+        .title-content {
+            width: 268px;
+            .title {
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 30px;
+                margin-bottom: 11px;
+            }
+            .see-all-btn {
+                border-radius: 100px;
+                background: $color-white;
+                border: 1px solid $color-white;
+                box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+                color: $color-secondary;
+                z-index: 1;
+                &:hover {
+                    color: $color-white;
+                    border: 1px solid #CD1B1E;
+                }
+            }
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    &--style-6 {
+        background-image: url("../images/banner/banner-bg-4.jpg");
+        padding: 0 62px 0 46px;
+        margin-bottom: 0;
+        // margin-bottom: 30px;
+        height: 185px;
+        border-radius: 15px;
+        @include media-only ('md', min) {
+            margin-bottom: 0;
+        }
+        .title-content {
+            width: 268px;
+            .title {
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 30px;
+                margin-bottom: 11px;
+                color: $color-title;
+            }
+            .see-all-btn {
+                border-radius: 100px;
+                background: $color-white;
+                border: 1px solid $color-white;
+                box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+                color: $color-title;
+                font-weight: 700;
+                z-index: 1;
+                &:hover {
+                    color: $color-white;
+                    border: 1px solid #CD1B1E;
+                }
+            }
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    &--style-7 {
+        background-image: url("../images/banner/banner-bg-5.jpg");
+        margin-bottom: 0;
+        margin-bottom: -120px;
+
+        
+
+        &::before {
+            display: none;
+            @include media-only('md', min) {
+                display: block;
+            }
+        }
+        &::after {
+            display: none;
+            @include media-only('md', min) {
+                display: block;
+            }
+        }
+    }
+}
+
+.banner-section {
+    position: relative;
+}

@@ -28,6 +28,31 @@
             }   
         }
     }
+
+    &--style-3 {
+        width: 240px;
+        height: 55px;
+        border-radius: 6px;
+        .nice-select:after {
+            width: 11px;
+            height: 11px;
+            right: -24px;
+            top: 43%;
+        }
+    }
+    &--style-4 {
+        width: 240px;
+        height: 55px;
+        border-radius: 6px;
+        border: 1px solid #CEDEDE;
+        box-shadow: 0px 5px 8px 0px #E2F1F1, 0px 5px 8px 0px #EDF0F0;
+        .nice-select:after {
+            width: 11px;
+            height: 11px;
+            right: -24px;
+            top: 43%;
+        }
+    }
 }
 
 .location-search-wrapper {

@@ -30,4 +30,51 @@
             padding-top: 3px;
         }
     }
+    &--style-3 {
+        flex: 1 !important;
+        height: 55px;
+        border-radius: 6px;
+        padding:  0 0 0 20px;
+        overflow: hidden;
+        width: 100%;
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                background-color: $color-secondary;
+                color: $color-white;
+                font-family: $font-plus-jakarta;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: normal;
+                padding: 16px 26px;
+                i { 
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    &--style-4 {
+        flex: 1 !important;
+        height: 55px;
+        border-radius: 6px;
+        padding:  0 0 0 20px;
+        overflow: hidden;
+        width: 100%;
+        border: 1px solid #CEDEDE;
+        box-shadow: 0px 5px 8px 0px #EDF0F0;
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                background-color: $color-white;
+                color: $color-title;
+                font-family: $font-plus-jakarta;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: normal;
+                padding: 16px 20px;
+                i { 
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
 }
