@@ -4,62 +4,103 @@
 
 .faq-main-wrapper {
     .faq-img-content {
+        position: relative;
+        margin-bottom: 25px;
         img {
-            margin-left: -45px;
+            @include media-only ('lg', min) {
+                margin-left: -45px;
+                margin-bottom: 0;
+            }
+        }
+        .circle-shape {
+            position: absolute;
+            left: -30px;
+            right: 0;
+            margin: 0 auto;
+            bottom: -20px;
+            animation: rotated-style 20s linear infinite;
+        }
+    }
+    &--style-2 {
+        .title-content {
+            .title {
+                font-size: 36px;
+                line-height: 46px;
+                margin-bottom: 10px;
+            }
         }
     }
 }
 
 .faq-accordion-wrapper {
-    &--style-1 {
-        padding-top: 12px;
-        .title-content {
-            .title {
-                color: $color-black;
-                font-weight: 700;
-                line-height: normal;
+    padding-top: 12px;
+    .title-content {
+        .title {
+            color: $color-black;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .para-text {
+
+        }
+    }
+
+    .accordion {
+        .accordion-item {
+            border-color: #D9D9D9;
+            .accordion-header {
+                .accordion-button {
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    padding: 10px 0;
+                    &:focus {
+                        border-color: none;
+                        outline: unset;
+                        box-shadow: none;
+                    }
+                    &::after {
+                        background-image: url("../images/faq/gray-angle-down.svg");
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+                    color: $color-primary;
+                    background-color: transparent;
+                    box-shadow: none;
+                    border-bottom: 1px solid #D9D9D9;
+                    // @include transition;
+                    &::after {
+                        background-image: url("../images/faq/primary-angle-down.svg");
+                    }
+                } 
+            }
+            .accordion-body {
+                padding: 1rem 0;
             }
             .para-text {
-
+                font-weight: 400;
+                line-height: 26px;
             }
         }
-
+    }
+    &--style-2 {
         .accordion {
             .accordion-item {
-                border-color: #D9D9D9;
                 .accordion-header {
                     .accordion-button {
-                        font-size: 22px;
-                        font-weight: 500;
-                        line-height: normal;
-                        text-transform: capitalize;
-                        padding: 10px 0;
-                        &:focus {
-                            border-color: none;
-                            outline: unset;
-                            box-shadow: none;
-                        }
+                        font-size: 24px;
+                        color: $color-text;
                         &::after {
-                            background-image: url("../images/faq/gray-angle-down.svg");
+                            background-image: url("../images/faq/plus-circle.svg");
                         }
                     }
                     .accordion-button:not(.collapsed) {
-                        color: $color-primary;
-                        background-color: transparent;
-                        box-shadow: none;
-                        border-bottom: 1px solid #D9D9D9;
-                        // @include transition;
+                        
                         &::after {
-                            background-image: url("../images/faq/primary-angle-down.svg");
+                            background-image: url("../images/faq/minus-circle.svg");
                         }
                     } 
-                }
-                .accordion-body {
-                    padding: 1rem 0;
-                }
-                .para-text {
-                    font-weight: 400;
-                    line-height: 26px;
                 }
             }
         }

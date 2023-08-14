@@ -76,3 +76,14 @@
 .animate-flicker4 {
      animation: flickerAnimation 2s infinite;
 }
+
+@keyframes rotated-style {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}

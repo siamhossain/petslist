@@ -1,0 +1,33 @@
+.sidebar-widget-layout {
+    border-radius: 10px;
+    border: 1px solid #E1E9E9;
+    background: #F6F9F9;
+    padding-bottom: 20px;
+    @include media-only ('lg', min) {
+        margin-left: 45px;
+    }
+    .side-widget {
+        border-bottom: 1px solid #D6E2E2;
+        padding: 30px;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .widget-title {
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 28px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            border-radius: 100px;
+            background-color: var(--color-primary);
+            left: 0;
+            bottom: -7px;
+        }
+    }
+}

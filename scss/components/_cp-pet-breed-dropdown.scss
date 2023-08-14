@@ -1,0 +1,32 @@
+.breed-dropdown {
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+    width: 100%;
+    .nice-select {
+        width: 100%;
+        span {
+            color: #7A7A87;
+            font-family: $font-plus-jakarta;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+        &::after {
+            right: 17px;
+            border-color: $color-title;
+        }
+        .list {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+
+.pet-breed-dropdown-wrapper {
+    margin-bottom: 36px;
+    .filter-title {
+        margin-bottom: 13px !important;
+    }
+}

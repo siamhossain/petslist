@@ -1,0 +1,37 @@
+.page-menu {
+    margin-top: 148px;
+    background-color: #F6F9F9;
+    padding: 43px 0;
+    ul {
+        gap: 30px;
+        li {
+            a {
+                color: #9A9AAB;
+                font-family: $font-plus-jakarta;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: normal;
+                position: relative;
+                &::after {
+                    content: url("../images/icons/pl-angle-right.svg");
+                    position: absolute;
+                    top: 1px;
+                    right: -19px;
+                }
+                &:hover {
+                    color: $color-title;
+                }
+            }
+            a.active {
+                color: $color-title;
+            }
+            &:last-child {
+                a {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

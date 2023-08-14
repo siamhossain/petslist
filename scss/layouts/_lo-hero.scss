@@ -1,46 +1,71 @@
 
 .hero-section {
     position: relative;
-    padding: 60px 0 94px 0;
+    // padding: 31px 0 0 0;
     z-index: 0;
-    &::before {
-        content: url("../images/hero-section/hero-img-1.png");
-        position: absolute;
-        left: 0;
-        bottom: -8px;
-        z-index: 1;
-        animation: fadeInUp 1s forwards;
-        @include media-only(1400px, min) {
-            left: 19.4%;
-        }
-        
-    }
-    &::after {
-        content: url("../images/hero-section/hero-img-2.png");
-        position: absolute;
-        right: 0;
-        bottom: -8px;
-        z-index: 1;
-        animation: fadeInUp 1s forwards;
-        @include media-only(1400px, min) {
-            right: 19.4%;
-        }
-    }
+    // &::before {
+    //     content: url("../images/hero-section/hero-img-1.png");
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: -8px;
+    //     z-index: 1;
+    //     animation: fadeInUp 1s forwards;
+    //     @include media-only(1400px, min) {
+    //         left: 19.4#%;
+    //     }
+    // }
+
+    // &::after {
+    //     content: url("../images/hero-section/hero-img-2.png");
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: -8px;
+    //     z-index: 1;
+    //     animation: fadeInUp 1s forwards;
+    //     @include media-only(1400px, min) {
+    //         right: 19.4%;
+    //     }
+    // }
     .hero-content-wrapper {
         position: relative;
         z-index: 2;
+        padding: 50px 0;
+        @include media-only ('md', min) {
+            padding: 31px 0 0 0;
+        }
+        .title-content {
+            padding-top: 0;    
+            @include media-only ('md', min) {
+                padding-top: 32px;    
+            }
+            .title {
+                font-size: 40px;
+                @include media-only ('lg', min) {
+                    font-size: 48px;
+                }
+            }
+        }
     }
     &--style-1 {
         background-image: url("../images/hero-section/hero-banner.jpg");
         @include background-content;
         z-index: 0;
+        margin-top: 70px;
+        @include media-only ('md', min) {
+            margin-top: 148px;
+        }
     }
     &--style-2 {
         background-image: url("../images/hero-section/hero-banner2.jpg");
         @include background-content;
         z-index: 0;
         padding: 60px 0;
-        // height: 560px;
+        .hero-content-wrapper {
+            @include media-only ('md', min) {
+                padding: 51px 0 0 0;
+            }
+        }
+
         &::before {
             display: none;
         }
@@ -48,12 +73,18 @@
             content: url("../images/hero-section/hero-img-3.png");
             right: 0;
             display: none;
+            position: absolute;
+            bottom: -8px;
+            z-index: 1;
+            animation: fadeInUp 1s forwards;
+           
             @include media-only (1200px, min) {
                 display: block;
             }
             @include media-only (1400px, min) {
                 right: 139px;
             }
+            
         }
 
         .title-content {
@@ -83,9 +114,12 @@
                 height: 55px;
             }
             .searchbox-wrapper {
-                flex: 1 !important;
                 height: 55px;
+                @include media-only ('sm', min) {
+                    flex: 1;
+                }
             }
+
         }
 
         .category-area-wrapper {
@@ -104,8 +138,12 @@
         z-index: 0;
         padding: 0;
         .hero-content-wrapper {
-            padding: 111px 0 118px 0;
+            padding: 160px 0 90px 0;
+            @include media-only ("md", min) {
+                padding: 211px 0 118px 0;
+            }
         }
+
         &::before {
             content: url("../images/hero-section/hero-img-4.png");
             left: 0;
@@ -116,6 +154,14 @@
             @include media-only (1400px, min) {
                 left: 38px;
             }
+
+            position: absolute;
+            bottom: -8px;
+            z-index: 1;
+            animation: fadeInUp 1s forwards;
+            // @include media-only(1400px, min) {
+            //     left: 19.4%;
+            // }
         }
         &::after {
             display: none;
@@ -213,6 +259,7 @@
             padding: 150px 0 50px 0;
             @include media-only ('md', min) {
                 padding: 55px 0 22px 0;
+                margin-top: 90px;
             }
         }
         &::before {
@@ -232,6 +279,68 @@
             }
             .sub-title {
                 color: $color-white;
+                line-height: normal;
+            }
+        }
+
+        .location-search-wrapper {
+            gap: 15px;
+            // margin-bottom: 35px;
+        }
+
+        .category-area-wrapper {
+            position: relative;
+            .category-text-shape {
+                position: absolute;
+                top: -25px;
+                right: -80px;
+                z-index: -1;
+            }
+        }
+    }
+    &--style-6 {
+        background-image: url("../images/hero-section/hero-banner6.jpg");
+        @include background-content;
+        z-index: 0;
+        padding: 0;
+        .hero-content-wrapper {
+            padding: 150px 0 50px 0;
+            @include media-only ('md', min) {
+                padding: 105px 0;
+                margin-top: 148px;
+            }
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+
+        .hero-img-left {
+            // margin-left: 0;
+            @include media-only (1500px, min) {
+                margin-left: -155px;
+            }
+        }
+        .hero-img-right {
+            // margin-right: -155px;
+            @include media-only (1500px, min) {
+                margin-right: -155px;
+            }
+        }
+
+        .title-content {
+            margin-bottom: 35px;
+            .title {
+                color: $color-title;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 60px;
+                text-transform: capitalize;
+            }
+            .sub-title {
+                color: $color-text;
                 line-height: normal;
             }
         }

@@ -9,6 +9,10 @@
     font-size: 15px;
     font-weight: 600;
     line-height: 25px;
+    margin-bottom: 25px;
+    @include media-only (576px, min) {
+        margin-bottom: 0;
+    }
     i {
         margin-left: 8px;
         vertical-align: middle;

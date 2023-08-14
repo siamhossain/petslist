@@ -47,13 +47,10 @@
 
             $window.on("scroll", function () {
                 var scroll = $(window).scrollTop();
-                if (scroll < 202) {
-                    $("nav.sticky-header").removeClass("affix");
-                    $(".place-holder").css("padding-top", "0");
-                    $("#header-content-wrap").addClass(".header-content-wrap");
+                if (scroll < 200) {
+                    $("header").removeClass("affix");
                 } else {
-                    $("nav.sticky-header").addClass("affix");
-                    $(".place-holder").css("padding-top", "130px");
+                    $("header").addClass("affix");
                 }
             });
 
@@ -291,13 +288,21 @@
         //Elements Carousel
         elementsCarousel: function () {
             if ($elCarousel.elExists()) {
+                var i = 1;
                 $elCarousel.each(function (index, element) {
-
+                    
                     var $this = $(this);
+
+                    var next_slider = 'slider-next' + i;
+                    var prev_slider = 'slider-prev' + i;
+
+                    $this.siblings(".swiper-arrow.prev").addClass(prev_slider);
+                    $this.siblings(".swiper-arrow.next").addClass(next_slider);
+                    
+
 
                     // Fetching from data attributes
                     var visibleSlides = $this.attr("data-visible-slide") ? parseInt($this.attr("data-visible-slide"), 10) : 4;
-                    var visibleSlides_xxxl = $this.attr("data-visible-xxxl-slide") ? parseInt($this.attr("data-visible-xxxl-slide"), 10) : 4;
                     var visibleSlides_xxl = $this.attr("data-visible-xxl-slide") ? parseInt($this.attr("data-visible-xxl-slide"), 10) : 4;
                     var visibleSlides_xl = $this.attr("data-visible-xl-slide") ? parseInt($this.attr("data-visible-xl-slide"), 10) : 4;
                     var visibleSlides_lg = $this.attr("data-visible-lg-slide") ? parseInt($this.attr("data-visible-lg-slide"), 10) : 3;
@@ -314,6 +319,8 @@
                     // Adding slider and slider-nav instances to use multiple times in a page
                     $this.parent().find(".prev").addClass("prev-" + index);
                     $this.parent().find(".next").addClass("next-" + index);
+
+
 
                     var rtSlider = new Swiper(element, {
                         slidesPerView: visibleSlides,
@@ -335,6 +342,9 @@
                         navigation: {
                             nextEl: '.swiper-arrow.next',
                             prevEl: '.swiper-arrow.prev'
+
+                            // nextEl: `.swiper-arrow.next-${index}`,
+                            // prevEl: `.swiper-arrow.prev-${index}`,
                         },
 
                         pagination: {
@@ -373,10 +383,6 @@
                                 slidesPerView: visibleSlides,
                                 spaceBetween: 30,
                             },
-                            1950: {
-                                slidesPerView: visibleSlides_xxxl,
-                                spaceBetween: 30,
-                            }
                         },
                         on: {
                             afterInit: function (slider) {
@@ -567,9 +573,41 @@
     })
 
 
-    //video-player
-        
+    //price range slider
+
+    $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [ 0, 250 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+      });
+      
+      var max_value = $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ));
+      var min_value = $( "#slider-range" ).slider( "values", 0 );
+
+      var log = $( "#amount" ).val() ;
+      console.log (log)
+      
+    //   $('.ui-slider-handle').attr('data-before', min_value);
+
+
+      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
     
+
+        $('.min-val').text( min_value  + "Test");
+
+
+        //filter option
+
+        var filterButton = $(".filter-area .filter-btn");
+        filterButton.on("click", function() {
+            $(".sidebar-filter-layout--style-2").toggleClass("active");
+            // alert("test")
+        });
 
 
 })(jQuery);

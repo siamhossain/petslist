@@ -95,12 +95,20 @@
         }
     }
     &--style-5 {
+        margin-bottom: 15px;
+        @include media-only ('md', min) {
+            margin-bottom: 0;
+        }
         .icon { 
+            width: 90px;
+            height: 95px;
             z-index: 0;
-            width: unset;
-            height: unset;
             position: relative;
             margin-bottom: 8px;
+            @include media-only ('md', min) {
+                width: unset;
+                height: unset;
+            }
             .cat-shape-bg {
                 position: relative;
                 z-index: 1;
@@ -120,6 +128,18 @@
                     animation: unset;
                 }
             }
+        }
+    }
+    &--style-6 {
+        border-radius: 15px;
+        border: 1px solid #E1E1E1;
+        background: linear-gradient(138deg, #FFF 0%, #FAFAFA 100%);
+        width: 170px;
+        height: 160px;
+        gap: 20px;
+        .icon {
+            width: unset;
+            height: unset;
         }
     }
 }

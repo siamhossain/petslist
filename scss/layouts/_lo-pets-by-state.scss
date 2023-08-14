@@ -1,4 +1,11 @@
 .pets-by-state {
+    &--style-1 {
+        &.section-padding {
+            @include media-from-to(1024px, min, 1200px, max ) {
+                padding: 70px 0;
+            }
+        }
+    }
     &--style-2 {
         background-image: url("../images/state/state-section-bg-2.jpg");
         @include background-content;

@@ -1,0 +1,70 @@
+.price-range-slider {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+    .range-value {
+        margin: 0;
+        input {
+            width: 100%;
+            // background: none;
+            color: red;
+            font-size: 16px;
+            font-weight: initial;
+            box-shadow: none;
+            border: none;
+            margin: 20px 0 20px 0;
+            margin-bottom: 35px;
+            
+        }
+    }
+    .range-bar {
+        border: none;
+        background-color: #DEE2E3;
+        height: 5px;
+        width: 100%;
+        border-radius:5px;
+        .ui-slider-range {
+          background: $color-primary;
+        }
+        .ui-slider-handle {
+          border: none;
+          background: $color-primary;;
+          height: 18px;
+          width: 18px;
+          top: -0.52em;
+          cursor: pointer;
+          border-radius: 100px;
+          border: 2px solid #FFF;
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+        }
+        span {
+            // position: relative;
+            &:nth-child(2) {
+                // background-color: red;
+                &::before {
+                    content: '$2k';
+                    position: absolute;
+                    background: $color-primary;
+                    padding: 0 10px;
+                    border-radius: 24px;
+                    top: -26px;
+                    left: -14px;
+
+                    color: $color-white;
+                    font-family: $font-plus-jakarta;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 22px; /* 200% */
+                }
+            }
+            &:nth-child(3) {
+                // background-color: blue;
+            }
+        }
+    }
+
+    .price-range-slider .range-bar .ui-slider-handle + span {
+        background: red;
+    }
+}
+  /*--- /.price-range-slider ---*/

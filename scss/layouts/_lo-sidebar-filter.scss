@@ -1,0 +1,119 @@
+.sidebar-filter-layout {
+    border-radius: 10px;
+    border: 1px solid #E1E9E9;
+    background: #F6F9F9;
+
+    padding: 30px;
+    margin-bottom: 30px;
+    @include media-only('md', min) {
+        margin-bottom: 0;
+    }
+    .sidebar-filter-title-area {
+        margin-bottom: 32px;
+        .sidebar-filter-title {
+            font-size: 21px;
+            font-weight: 600;
+            line-height: normal;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 4px;
+                border-radius: 100px;
+                background-color: $color-primary;
+                left: 0;
+                bottom: -6px;
+            }
+        }
+        .filter-clear-btn {
+            border: none;
+            background-color: transparent;
+            color: var(--paragraph, #646464);
+            font-family: $font-plus-jakarta;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+    }
+
+    ul {
+        li {
+            margin-bottom: 4px;
+        }
+    }
+
+    .filter-title {
+        color: $color-black;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 7px;
+    }
+    .filter-divider {
+        padding-bottom: 30px;
+    }
+
+    .filter-apply-btn {
+        border-radius: 6px;
+        border: 1px solid #CD1B1E;
+        background: linear-gradient(122deg, #FF282C 0%, #FF4E51 100%);
+        color: #FFF;
+        font-family: $font-plus-jakarta;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+    }
+
+    &--style-2 {
+        position: absolute;
+        top: 30px;
+        z-index: 1;
+        width: 100%;
+        padding: 47px 47px 68px 47px;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        @include transition;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            top: 56px;
+        }
+        .price-range-filter {
+            padding-right: 54px;
+        }
+        .pet-breed-dropdown-wrapper {
+            padding-right: 48px;
+            .nice-select {
+                height: 50px;
+            }
+        }
+        .filter-checboxe-list {
+            overflow-y: auto;
+            height: 136px;
+            
+            &::-webkit-scrollbar-track
+            {
+                border-radius: 100px;
+                background-color: #E3EAEA;
+            }
+            
+            &::-webkit-scrollbar
+            {
+                height: 100%;
+                width: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb
+            {
+                border-radius: 100px;
+                background-color: #515167;
+            }
+        }
+    }
+}

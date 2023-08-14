@@ -1,16 +1,15 @@
 .widget-recent-post {
-    margin-bottom: 46px;
     .post-thumb-list {
 
     }
     .post-area {
         gap: 15px;
-        margin-bottom: 24px;
+        margin-bottom: 25px;
         &:last-child {
             margin-bottom: 0;
         }
         .item-img {
-            border-radius: 50%;
+            border-radius: 8px;
             overflow: hidden;
             img {
                 @include transition;
@@ -24,36 +23,22 @@
                     margin-right: 3px;
                 }
                 span {
-                    // font-family: $font-roboto;
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 24px;
-                    color: #6B707F;
+                    @extend .para-text;
+                    font-size: 14px;
+                    i {
+                        color: $color-primary;
+                        font-size: 16px;
+                    }
                 }
             }
             .title {
-                margin-top: -3px;
-                margin-bottom: 0;
+                margin-bottom: 2px;
                 a {
-                    // font-family: $font-roboto;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 24px;
                     color: $color-title;
-
-                    display: inline;
-                    padding-bottom: 0;
-                    -webkit-transition: background-size 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    transition: background-size 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    background-image: -webkit-gradient(linear, left top, left bottom, from($color-primary), color-stop(98%, $color-primary));
-                    background-image: linear-gradient(to bottom, $color-primary, $color-primary);
-                    background-size: 0 1px;
-                    background-repeat: no-repeat;
-                    background-position: left 100%;
+                    font-weight: 600;
 
                     &:hover {
                         color: $color-primary;
-                        background-size: 100% 1px;
                     }
                 }
             }

@@ -1,0 +1,32 @@
+.form-check {
+    gap: 11px;
+    margin: 0;
+    .form-check-input {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        margin-top: 6px;
+        border: 1px solid #D1D1D1;
+        background: $color-white;
+        margin-right: 11px;
+        
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .form-check-input:checked {
+        border: none;
+        background-color: $color-primary;
+        background-image: url("../images/icons/checkbox-tick.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
+    .form-check-label {
+        color: #7A7A87;
+        font-family: $font-plus-jakarta;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30px; 
+    }
+}

@@ -121,6 +121,10 @@
         border-top: 1px solid #1E2148;;;
         .rt-footer-copyright-area {
             flex-wrap: wrap;
+            padding-bottom: 25px;
+            @include media-only ('md', min) {
+                padding-bottom: 0;
+            }
             .footer-logo {
                 background-color: $color-secondary;
                 padding: 38px 66px 36px 66px;
@@ -165,8 +169,9 @@
 
     &--style-1 {
         background-image: url("../images/footer/footer-bg.jpg");
+        @include background-content;
         @include transition;
-        height: 546px;
+        // height: 546px;
     }
     &--style-2 {
         background-color: $color-white;

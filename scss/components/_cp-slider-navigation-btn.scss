@@ -12,8 +12,8 @@
         justify-content: center;
         width: 60px;
         height: 60px;
-        border: 1px solid var(--border-color);
-        background-color: var(--color-white);
+        border: 1px solid #515167;
+        background-color: #515167;
         transition: all 0.4s ease-in-out;
         position: absolute;
         bottom: -15%;
@@ -30,17 +30,17 @@
             display: inline-flex;
         }
         @include media-only (1400px, min) {
-            top: 45%;
+            top: 20%;
         }
     }
     .prev {
-        left: 15.5%;
+        left: -4%;
         // @include media-only (1400px, min) {
         //     left: -80px;
         // }
     }
     .next {
-        right: 15.5%;
+        right: -4%;
         // @include media-only (1400px, min) {
         //     right: -80px;
         // }
@@ -49,20 +49,4 @@
 
 .slider-wrapper {
     position: relative;
-}
-
-
-
-.course-details-1-page {
-    .wrapper {
-        position: relative;
-    }
-    .slider-navigation-btn-wrapper {
-        .prev {
-            left: -30px;
-        }
-        .next {
-            right: -30px;
-        }
-    }
 }

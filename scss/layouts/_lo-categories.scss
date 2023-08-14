@@ -1,10 +1,16 @@
 .categories-section {
     background: #FFF;
     box-shadow: 0px 4px 12px 0px #EBEBEB;
+    &--style-2 {
+        box-shadow: none;
+    }
 }
 
 .category-area-wrapper {
-    padding: 34px 0;
+    padding: 34px 35px;
+    @include media-only (600px, min) {
+        padding: 34px 0;
+    }
     gap: 39px;
     .category-list {
         row-gap: 20px;
@@ -20,7 +26,7 @@
     &--style-4 {
         padding: 130px 30px 40px 30px;
         @include media-only ('md', min) {
-            padding: 20px 0;
+            padding: 120px 0 20px 0;
         }
         .category-list {
             column-gap: 31px;
@@ -29,6 +35,38 @@
     &--style-5 {
         .category-list {
             gap: unset;
+        }
+    }
+    &--style-6 {
+        border-radius: 30px;
+        padding: 20px;
+        background: #FFF;
+        box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.06);
+        margin-top: -95px;
+        .category-list {
+            gap: 22px;
+        }
+        .wrapper {
+            .rt-slider {
+                .element-carousel {
+                    .swiper-wrapper {
+                        // gap: 22px;
+                        .swiper-slide {
+                            // margin-right: 28px !important;
+                        }
+                    }
+                }
+            }
+            .slider-navigation-btn-wrapper {
+                display: none;
+            }
+        }
+        &:hover {
+            .wrapper {
+                .slider-navigation-btn-wrapper {
+                    display: block;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,13 @@
+.header-action-bar {
+    padding: 22px 0;
+    .location-search-wrapper {
+        padding: 0 18px 0px 80px;
+        flex: 1;
+        .location-dropdown-wrapper {
+            height: 48px;
+        }
+        .searchbox-wrapper {
+            height: 48px;
+        }
+    }
+}
