@@ -1,0 +1,14 @@
+.team-section {
+    .team-content-wrapper {
+        background-image: url("../../images/team/team-bg-1.jpg");
+        @include background-content;
+        padding: 230px 0 133px 0;
+
+        .title-content {
+            margin-bottom: 40px;
+            title {
+
+            }
+        }
+    }
+}

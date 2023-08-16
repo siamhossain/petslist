@@ -1,0 +1,150 @@
+.post-comment-form-wrapper {
+    border-radius: 8px;
+    padding: 38px 17px  45px 40px;
+    border-radius: 12px;
+    background-color: #F6F9F9;
+    border-radius: 12px;
+    border: 1px solid #E1E9E9;
+    .title {
+        font-weight: 700;
+        @include toRem(font-size, 24);
+        line-height: 36px;
+        margin-bottom: 2px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background: $color-primary;
+            border-radius: 100px;
+            width: 40px;
+            height: 5px;
+            bottom: -23px;
+        }
+    }
+    .para-text {
+        line-height: 26px;
+    }
+    .post-comment-form {
+        .input-area {
+            input, textarea {
+                background: $color-white;
+                border-radius: 5px;
+                border: 1px solid #E1E4E7;
+                font-weight: 400;
+                @extend .para-text;
+                line-height: 28px;
+                &::placeholder {
+                    color: $color-text; 
+                }
+            }
+            input {
+                width: 100%;
+                padding: 11px 15px;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                height: 50px;
+            }
+            textarea {
+                width: 100%;
+                padding: 17px 30px;
+                height: 130px;
+                margin-bottom: 10px;
+            }
+        }
+        .check-box-area {
+            gap: 12px;
+            margin-bottom: 24px;
+            input {
+                width: 23px;
+                height: 23px;
+                margin: 0;
+                border-radius: 3px;
+                border: 1px solid #C6C6C6;
+                &:checked {
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                }
+            }
+            label {
+
+            }
+        }
+        .form-btn {
+            a {
+                padding: 16px 26px;
+                background-color: $color-secondary;
+                border-radius: 5px;
+                font-family: $font-plus-jakarta;
+                font-weight: 600;
+                @include toRem(font-size, 16);
+                color: $color-white;
+
+                &::before, &::after {
+                    border-top: 30px solid #CD1B1E;
+                    border-bottom: 30px solid #CD1B1E;
+                }
+                &::before {
+                    border-right: 30px solid transparent !important;
+                }
+
+                &::after {
+                    border-left: 30px solid transparent !important;
+                }
+            }
+        }
+    }
+
+    &--style-2 {
+        padding: 35px 15px 35px 40px;
+        .title {
+            font-family: $font-bhaijaan;
+            font-weight: 600;
+            @include toRem(font-size, 24);
+            line-height: 30px;
+            color: $color-title;
+            margin-bottom: 37px;
+        }
+        background: $color-white;
+        .post-comment-form {
+            .input-area {
+                input {
+                    background: #F5F5F7;
+                    margin-bottom: 9px;
+                }
+                textarea {
+                    background: #F5F5F7;
+                }
+            }
+            .form-btn {
+                a {
+                    padding: 36px 26px;
+                    background: $color-primary;
+                    border-radius: 5px;
+                    font-family: $font-bhaijaan;
+                    font-weight: 600;
+                    @include toRem(font-size, 16);
+                    color: $color-white;
+                    width: 100%;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.contact-page {
+    .post-comment-form-wrapper {
+        // padding: 35px 6px 40px 30px;
+    }
+}
+
+.blog-details-page {
+    .post-comment-form-wrapper {
+        .title {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

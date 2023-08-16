@@ -1,0 +1,56 @@
+.comment-section {
+    margin-bottom: 50px;
+    .title {
+        @include toRem(font-size, 30);
+        line-height: 36px;
+    }
+    .comment-reply {
+        padding-left: 45px !important;
+    }
+    .comment-wrapper {
+        gap: 27px;
+        padding: 29px 0;
+        border-bottom: 1px solid #D6DCE9;
+
+        .comment-content {
+            flex: 1;
+            .commentor-info {
+                .commentor-name {
+                    @include toRem(font-size, 24);
+                    font-weight: 600;
+                    line-height: 30px;
+                    margin-bottom: 12px;
+                }
+                .comment-meta {
+                    span {
+                        font-size: 15px;
+                        line-height: 28px;
+                    }
+                }
+                .comment {
+                    p {
+                        line-height: 28px;
+                    }
+                    margin-bottom: 12px;
+                }
+            }
+            .reply-btn {
+                border-radius: 50px;
+                background-color: #FDE4E4;
+                padding: 8px 19px;
+                font-family: $font-plus-jakarta;
+                font-weight: 500;
+                @include toRem(font-size, 14);
+                color: $color-secondary;
+                line-height: normal;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $color-white;
+                    border-color: transparent;
+                    background: $color-secondary;
+                }
+            }
+        }
+    }
+}

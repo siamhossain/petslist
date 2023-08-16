@@ -15,9 +15,6 @@
 
 .flag {
     clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
-    position: absolute;
-    top: 24px;
-    left: 0;
     height: 23px;
     padding: 5px 18px 5px 10px;
     color: $color-white;
@@ -27,5 +24,5 @@
     line-height: normal;
     letter-spacing: 0.44px;
     text-transform: uppercase;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }

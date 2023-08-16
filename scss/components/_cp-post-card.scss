@@ -9,6 +9,9 @@
         position: relative;
         
         .flag-list {
+            position: absolute;
+            top: 25px;
+            left: 0;
             li {
                 &:nth-child(1) {
                     top: 17px;

@@ -1,14 +1,22 @@
 .meta-list {
-    gap: 20px;
+    gap: 18px;
+    margin-bottom: 15px;
     li {
-        span, a {
-            font-family: 'Roboto';
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 18px;
-            color: #6C6C6C;
+        i {
+            font-size: 20px;
+        }
+    }
+    .para-text {
+        font-size: 14px;
+        line-height: normal;
+    }
+    .entry-admin {
+        span {
+            margin-right: 3px;
         }
         a {
+            color: $color-title;
+            font-weight: 600;
             &:hover {
                 color: $color-primary;
             }

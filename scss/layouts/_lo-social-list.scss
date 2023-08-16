@@ -1,0 +1,14 @@
+.social-list {
+    gap: 15px;
+    li {
+        a {
+            color: #9898A0;
+            i {
+                font-size: 18px;
+            }
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

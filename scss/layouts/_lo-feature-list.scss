@@ -1,0 +1,44 @@
+.feature-list {
+    margin-bottom: 34px;
+    li {
+        padding-left: 36px;
+        color: $color-title;
+        font-family: $font-plus-jakarta;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 28px; 
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 12px;
+        &::before {
+            content: url("../images/about/feature-list-icon.svg");
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            left: 0;
+            top: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &--style-2 {
+        margin-bottom: 0;
+        li { 
+            padding-left: 28px;
+            &::before {
+                content: url("../images/blog/feature-list-icon-2.svg");
+                width: 20px;
+                height: 20px;
+                padding-bottom: 5px;
+                top: 5px;
+                padding-left: 1px;
+            }
+        }
+    }
+}
