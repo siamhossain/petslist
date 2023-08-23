@@ -208,6 +208,7 @@
             content: url("../images/hero-section/hero-img-6.png");
             left: 0;
             display: none;
+            position: absolute;
             @include media-only (1200px, min) {
                 display: block;
             }

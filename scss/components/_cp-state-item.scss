@@ -15,22 +15,26 @@
             .title-wrap {
                 i {
                     color: #C3C3C3;
+                    margin-right: 4px;
                 }
                 span {
                     color: #838390;
                     font-size: 15px;
                     font-weight: 400;
+                    @include transition;
                 }
             }
             i {
                 color: red;
                 font-size: 16px;
+                @include transition;
             }
         }
     }
 
     &:hover {
         background-color: $color-primary;
+        transform: scale(1.05);
         .title {
             a {
                 color: $color-white;
@@ -44,6 +48,9 @@
                         color: $color-white;
                         @include transition;
                     }
+                }
+                i {
+                    color: $color-white;
                 }
                 svg {
                     fill {
@@ -85,11 +92,13 @@
                 z-index: 1;
                 a {
                     color: $color-white;
+                    @include transition;
                     .title-wrap {
                         span {
                             color: #D8D8D8;
                             font-size: 15px;
                             font-weight: 400;
+                            
                         }
                     }
                     &:hover {

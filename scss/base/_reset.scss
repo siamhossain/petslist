@@ -60,6 +60,25 @@
     }
 }
 
+//Gutter size
+@media (min-width: 768px) {
+    .row.gutters-10 {
+        margin-left: -5px;
+        margin-right: -5px;
+
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+    .row.gutters-10 > [class^="col-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+
 
 //swipper slider bullets style
 
@@ -99,4 +118,11 @@
         bottom: 0;
         left: 0;
     }
+}
+
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+        margin-left: 0;
+        margin-right: 0;
+        display: inline;
 }

@@ -7,8 +7,29 @@
                 font-size: 18px;
             }
             &:hover {
-                color: $color-primary;
+                // color: $color-primary;
             }
         }
     }
+    &--style-2 {
+        padding: 30px;
+        li {
+            a {
+                width: 36px;
+                height: 36px;
+                color: #515167;
+                border-radius: 7px;
+                border: 1px solid #AFB8B8;
+                background: $color-white;
+                i {
+                    font-size: 18px;
+                }
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                }
+            }
+        }
+    } 
 }

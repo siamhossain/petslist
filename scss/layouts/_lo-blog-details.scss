@@ -17,6 +17,28 @@
                     }
                 }
             }
+            .post-content {
+                .entry-meta {
+                    gap: 18px;
+                    margin-bottom: 12px;
+                    li {
+                        i {
+                            margin-right: 6px;
+                            font-size: 20px;
+                        }
+                        a {
+                            color: $color-title;
+                            font-family: $font-plus-jakarta;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: normal;
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .blog-details-feature-area {

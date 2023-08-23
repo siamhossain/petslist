@@ -20,28 +20,7 @@
                 }
             }
         }
-        .entry-meta {
-            gap: 18px;
-            margin-bottom: 15px;
-            li {
-                i {
-                    font-size: 20px;
-                }
-            }
-            .para-text {
-                font-size: 14px;
-                line-height: normal;
-            }
-            .entry-admin {
-                span {
-                    margin-right: 3px;
-                }
-                a {
-                    color: $color-title;
-                    font-weight: 600;
-                }
-            }
-        }
+        
         .content {
             margin-bottom: 15px;
             .para-text {

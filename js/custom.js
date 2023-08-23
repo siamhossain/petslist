@@ -292,6 +292,7 @@
                 $elCarousel.each(function (index, element) {
                     
                     var $this = $(this);
+                    
 
                     var next_slider = 'slider-next' + i;
                     var prev_slider = 'slider-prev' + i;
@@ -317,8 +318,8 @@
                     var direction = $this.attr("data-direction") ? $this.attr("data-direction") : 'horizontal';
 
                     // Adding slider and slider-nav instances to use multiple times in a page
-                    $this.parent().find(".prev").addClass("prev-" + index);
-                    $this.parent().find(".next").addClass("next-" + index);
+                    $this.parent().parent().find(".prev").addClass("prev-" + index);
+                    $this.parent().parent().find(".next").addClass("next-" + index);
 
 
 
@@ -339,12 +340,13 @@
                             delay: slideAutoPlayDelay
                         },
 
-                        navigation: {
-                            nextEl: '.swiper-arrow.next',
-                            prevEl: '.swiper-arrow.prev'
 
-                            // nextEl: `.swiper-arrow.next-${index}`,
-                            // prevEl: `.swiper-arrow.prev-${index}`,
+                        navigation: {
+                            // nextEl: '.next',
+                            // prevEl: '.prev'
+
+                            nextEl: `.next-${index}`,
+                            prevEl: `.prev-${index}`,
                         },
 
                         pagination: {
@@ -572,42 +574,6 @@
         })
     })
 
-
-    //price range slider
-
-    $( "#slider-range" ).slider({
-        range: true,
-        min: 0,
-        max: 500,
-        values: [ 0, 250 ],
-        slide: function( event, ui ) {
-          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
-      });
-      
-      var max_value = $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ));
-      var min_value = $( "#slider-range" ).slider( "values", 0 );
-
-      var log = $( "#amount" ).val() ;
-      console.log (log)
-      
-    //   $('.ui-slider-handle').attr('data-before', min_value);
-
-
-      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    
-
-        $('.min-val').text( min_value  + "Test");
-
-
-        //filter option
-
-        var filterButton = $(".filter-area .filter-btn");
-        filterButton.on("click", function() {
-            $(".sidebar-filter-layout--style-2").toggleClass("active");
-            // alert("test")
-        });
 
 
 })(jQuery);

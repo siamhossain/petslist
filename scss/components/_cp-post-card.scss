@@ -26,6 +26,8 @@
             position: absolute;
             top: 19px;
             right: 20px;
+            justify-content: center;
+            align-items: center;
         }
     }
     .card-content {
@@ -85,6 +87,7 @@
             i {
                 color: #9E9FB2;
                 font-size: 18px;
+                margin-right: 3px;
             }
         }
         .content-bottom {

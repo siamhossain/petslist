@@ -5,12 +5,19 @@
         margin-bottom: 17px;
         img {
             width: 100%;
+            @include transition;
         }
     }
     .team-content {
         .social-list {
             margin-bottom: 13px;
-            margin-left: -8px;
+            .social-item {
+                a {
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
         }
         .title {
             margin-bottom: 3px;
@@ -29,5 +36,11 @@
             font-weight: 400;
         }
     }
-
+    &:hover {
+        .team-img-wrapper {
+            img {
+                transform: scale(1.15);
+            }
+        }
+    }
 }

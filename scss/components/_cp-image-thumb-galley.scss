@@ -1,0 +1,20 @@
+.image-thumb-galley {
+    .thumb-galley-img-wrapper {
+        .lg-img {
+            margin-bottom: 10px;
+            position: relative;
+            .image-count {
+                top: 27px;
+                right: 21px;
+                left: unset;
+                bottom: unset;
+            }
+        }
+        .thumbnail-nav-wrapper {
+            gap: 10px;
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+}

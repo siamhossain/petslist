@@ -1,0 +1,105 @@
+.pet-details-accordion {
+    .accordion {
+        .accordion-item {
+            border-radius: 10px;
+            border: 1px solid #E1E9E9;
+            background: $color-white;
+            padding: 10px 30px 15px 30px;
+            .accordion-header {
+                .accordion-button {
+                    color: $color-title;
+                    font-size: 24px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    line-height: normal;
+                    padding: 10px 0;
+
+                    &:focus {
+                        border-color: none;
+                        outline: unset;
+                        box-shadow: none;
+                    }
+                    &::after {
+                        background-image: url("../images/faq/dark-angle-down.svg");
+                        align-self: baseline;
+                        margin-top: 7px;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 30px;
+                        height: 4px;
+                        border-radius: 100px;
+                        background-color: $color-primary;
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+                    background-color: transparent;
+                    box-shadow: none;
+                    &::after {
+                        // background-image: url("../images/faq/dark-angle-down.svg");
+                    }
+                } 
+            }
+            .accordion-body {
+                padding: 1rem 0;
+                .info-text {
+                    font-size: 15px;
+                    line-height: 27px;
+                    margin-bottom: 20px;
+                    @extend .para-text;
+                }
+                .pet-info {
+                    ul.pet-info-table {
+                        columns: 2;
+                        -webkit-columns: 2;
+                        -moz-columns: 2;
+                        li {
+                            border-radius: 4px;
+                            padding: 9px 18px;
+                            
+                            p {
+                                @extend .para-text;
+                                font-size: 14px;
+                                width: 30%;
+                            }
+
+                            span {
+                                color: $color-title;
+                                text-transform: capitalize;
+                                @extend .para-text;
+                            }
+
+                            &:nth-child(odd) {
+                                background-color: #F7F7F7;
+                            }
+                        }
+                        &--style-2 {
+                            columns: unset;
+                            li {
+                                p {
+                                    width: 16%;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.testx {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    li {
+        &:nth-child(odd) {
+            background-color: gray;
+        }
+    }
+}

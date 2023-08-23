@@ -1,0 +1,18 @@
+.action-icon {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #AFB8B8;
+    background-color: #F6F9F9;
+    @include transition;
+    i {
+        color: #515167
+    }
+
+    &:hover {
+        background-color: #515167;
+        border-color: #515167;
+        i {
+            color: $color-white;
+        }
+    }
+}

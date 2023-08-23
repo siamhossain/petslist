@@ -134,9 +134,12 @@
         border-radius: 15px;
         border: 1px solid #E1E1E1;
         background: linear-gradient(138deg, #FFF 0%, #FAFAFA 100%);
-        width: 170px;
+        width: 100%;
         height: 160px;
         gap: 20px;
+        @include media-only ('lg', min) {
+            width: 170px;
+        }
         .icon {
             width: unset;
             height: unset;
