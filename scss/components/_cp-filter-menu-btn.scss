@@ -4,7 +4,7 @@
     border-radius: 6px;
     color: $color-white;
     font-family: $font-plus-jakarta;
-    font-size: 16px;
+    @include toRem(font-size, 16);
     font-weight: 600;
     line-height: 20px;
     padding: 9px 14px 8px 17px;
@@ -23,7 +23,8 @@
 }
 
 .item-found-text {
-    font-size: 18px;
+    @include toRem(font-size, 18);
     font-weight: 400;
     line-height: 24px;
 }
+

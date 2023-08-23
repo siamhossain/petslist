@@ -11,7 +11,7 @@
     .sidebar-filter-title-area {
         margin-bottom: 32px;
         .sidebar-filter-title {
-            font-size: 21px;
+            @include toRem(font-size, 21);
             font-weight: 600;
             line-height: normal;
             position: relative;
@@ -31,7 +31,7 @@
             background-color: transparent;
             color: var(--paragraph, #646464);
             font-family: $font-plus-jakarta;
-            font-size: 14px;
+            @include toRem(font-size, 14);
             font-weight: 400;
             line-height: normal;
             text-transform: capitalize;
@@ -46,7 +46,7 @@
 
     .filter-title {
         color: $color-black;
-        font-size: 20px;
+        @include toRem(font-size, 20);
         font-weight: 600;
         line-height: 24px;
         margin-bottom: 7px;
@@ -61,7 +61,7 @@
         background: linear-gradient(122deg, #FF282C 0%, #FF4E51 100%);
         color: #FFF;
         font-family: $font-plus-jakarta;
-        font-size: 15px;
+        @include toRem(font-size, 15);
         font-weight: 800;
         line-height: normal;
         text-transform: uppercase;

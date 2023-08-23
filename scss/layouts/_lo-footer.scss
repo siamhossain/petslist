@@ -22,7 +22,7 @@
                 }
                 .para-text {
                     color: #515167;
-                    font-size: 16px;
+                    @include toRem(font-size, 16);
                     font-weight: 500;
                     line-height: 28px;
                     text-transform: unset;
@@ -34,7 +34,7 @@
                         a {
                             font-family: $font-plus-jakarta;
                             color: #88899a;
-                            font-size: 16px;
+                            @include toRem(font-size, 16);
                             font-weight: 500;
                             line-height: 36px; 
                             transition: all 0.3s ease-in-out;
@@ -92,7 +92,7 @@
                         color: #6A6D90;
 
                         font-family: $font-plus-jakarta;
-                        font-size: 14px;
+                        @include toRem(font-size, 14);
                         font-weight: 500;
                         line-height: 26px;
                         &::placeholder {
@@ -132,7 +132,7 @@
             .rt-footer-copyright-text {
                 color: #6A6D90;
                 font-family: $font-plus-jakarta;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 font-weight: 400;
                 line-height: normal;
                 text-transform: lowercase;
@@ -183,14 +183,14 @@
                 .rt-footer-link-list-wrapper {
                     .rt-footer-link-heading {
                         color: $color-title;
-                        font-size: 24px;
+                        @include toRem(font-size, 24);
                         font-weight: 600;
                         line-height: 36px;
                         margin-bottom: 15px;
                     }
                     .para-text {
                         color: #515167;
-                        font-size: 16px;
+                        @include toRem(font-size, 16);
                         font-weight: 500;
                         line-height: 28px;
                         text-transform: unset;
@@ -202,7 +202,7 @@
                             a {
                                 color: $color-text;
                                 font-family: $font-plus-jakarta;
-                                font-size: 16px;
+                                @include toRem(font-size, 16);
                                 font-weight: 500;
                                 line-height: 36px;
     
@@ -222,7 +222,7 @@
                     .rt-footer-link-heading {
                         color: $color-title;
                         text-align: center;
-                        font-size: 20px;
+                        @include toRem(font-size, 20);
                         font-weight: 700;
                         line-height: 26px;
                         text-transform: capitalize;
@@ -255,7 +255,7 @@
                 .rt-footer-copyright-text {
                     color: #6A6D90;
                     font-family: $font-plus-jakarta;
-                    font-size: 16px;
+                    @include toRem(font-size, 16);
                     font-weight: 400;
                     line-height: normal;
                     text-transform: lowercase;

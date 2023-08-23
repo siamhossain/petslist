@@ -9,7 +9,7 @@
 
     color: $color-title;
     font-family: $font-plus-jakarta;
-    font-size: 14px;
+    @include toRem(font-size, 14);
     font-weight: 600;
     line-height: 28px;
     text-transform: capitalize;

@@ -13,7 +13,7 @@
             span {
                 color: #515167;
                 font-family: $font-plus-jakarta;
-                font-size: 14px;
+                @include toRem(font-size, 14);
                 font-weight: 600;
                 line-height: normal;
             }

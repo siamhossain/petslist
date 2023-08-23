@@ -31,7 +31,7 @@
                 line-height: 20px;
                 a {
                     color: #000;
-                    font-size: 20px;
+                    @include toRem(font-size, 20);
                     font-weight: 600;
                     text-transform: capitalize;
                 }
@@ -39,7 +39,7 @@
             .membership-duration {
                 color: $color-text;
                 font-family: $font-plus-jakarta;
-                font-size: 14px;
+                @include toRem(font-size, 14);
                 font-weight: 500;
                 line-height: 20px;
                 text-transform: capitalize;
@@ -55,7 +55,7 @@
                 .status-text {
                     color: $color-text;
                     font-family: $font-plus-jakarta;
-                    font-size: 13px;
+                    @include toRem(font-size, 13);
                     font-weight: 500;
                     line-height: 20px;
                     text-transform: capitalize;
@@ -86,7 +86,7 @@
         .see-all-ads-link {
             color: $color-title;
             font-family: $font-plus-jakarta;
-            font-size: 15px;
+            @include toRem(font-size, 15);
             font-weight: 600;
             line-height: normal;
             margin-top: 10px;
@@ -103,7 +103,7 @@
             span {
                 color: $color-white;
                 font-family: $font-plus-jakarta;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 font-weight: 800;
                 line-height: normal;
                 text-transform: uppercase;
@@ -111,7 +111,7 @@
             p {
                 color: $color-white;
                 font-family: Plus Jakarta Sans;
-                font-size: 13px;
+                @include toRem(font-size, 13);
                 line-height: normal;
                 margin-top: 6px;
             }
@@ -129,7 +129,7 @@
             p {
                 color: $color-white;
                 font-family: $font-plus-jakarta;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 font-weight: 600;
                 line-height: normal;
             }

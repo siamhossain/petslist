@@ -15,7 +15,7 @@
     }
     .widget-title {
         position: relative;
-        font-size: 20px;
+        @include toRem(font-size, 20);
         font-weight: 600;
         line-height: normal;
         margin-bottom: 28px;

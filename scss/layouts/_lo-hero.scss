@@ -39,9 +39,9 @@
                 padding-top: 32px;    
             }
             .title {
-                font-size: 40px;
+                @include toRem(font-size, 40);
                 @include media-only ('lg', min) {
-                    font-size: 48px;
+                    @include toRem(font-size, 48);
                 }
             }
         }
@@ -91,7 +91,7 @@
             margin-bottom: 35px;
             .title {
                 color: $color-white;
-                font-size: 60px;
+                @include toRem(font-size, 60);
                 font-weight: 700;
                 img {
                     vertical-align: sub;
@@ -171,7 +171,7 @@
             margin-bottom: 35px;
             .title {
                 color: $color-white;
-                font-size: 50px;
+                @include toRem(font-size, 50);
                 font-weight: 700;
                 line-height: 60px;
             }
@@ -226,7 +226,7 @@
             margin-bottom: 35px;
             .title {
                 color: $color-white;
-                font-size: 50px;
+                @include toRem(font-size, 50);
                 font-weight: 700;
                 line-height: 60px;
             }
@@ -274,7 +274,7 @@
             margin-bottom: 35px;
             .title {
                 color: $color-white;
-                font-size: 50px;
+                @include toRem(font-size, 50);
                 font-weight: 700;
                 line-height: 60px;
             }
@@ -335,7 +335,7 @@
             margin-bottom: 35px;
             .title {
                 color: $color-title;
-                font-size: 50px;
+                @include toRem(font-size, 50);
                 font-weight: 600;
                 line-height: 60px;
                 text-transform: capitalize;

@@ -15,13 +15,13 @@
         margin-bottom: 28px;
         .title {
             color: $color-white;
-            font-size: 40px;
+            @include toRem(font-size, 40);
             font-weight: 700;
             line-height: normal;
         }
         .sub-title {
             color: $color-white;
-            font-size: 18px;
+            @include toRem(font-size, 18);
             font-weight: 500;
             line-height: 24px;
         }

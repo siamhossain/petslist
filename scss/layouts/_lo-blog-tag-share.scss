@@ -6,7 +6,7 @@
     .title {
         color: $color-title;
         font-family: $font-bhaijaan;
-        font-size: 18px;
+        @include toRem(font-size, 18);
         font-weight: 600;
         line-height: 28px;
     }
@@ -22,7 +22,7 @@
                     padding: 8px 21px;
                     color: #515167;
                     font-family: $font-plus-jakarta;
-                    font-size: 15px;
+                    @include toRem(font-size, 15);
                     font-weight: 500;
                     line-height: 28px;
                     &:hover {

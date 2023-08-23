@@ -9,7 +9,7 @@
     .section-text-content {
         margin-bottom: 14px !important;
         .section-heading {
-            font-size: 26px;
+            @include toRem(font-size, 26);
             font-weight: 700;
             line-height: 36px;
             text-transform: capitalize;
@@ -57,9 +57,15 @@
         height: 56px;
         color: $color-white;
         font-family: $font-plus-jakarta;
-        font-size: 18px;
+        @include toRem(font-size, 18);
         font-weight: 700;
         line-height: 0px;
         margin-top: 15px;
+        overflow: visible;
+        &::before, &::after {
+            border-top: 30px solid #CD1B1E;
+            border-bottom: 30px solid #CD1B1E;
+            
+        }
     }
 }

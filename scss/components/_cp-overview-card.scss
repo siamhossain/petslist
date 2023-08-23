@@ -12,7 +12,7 @@
     .title-area {
         .price {
             color: $color-secondary;
-            font-size: 30px;
+            @include toRem(font-size, 30);
             font-weight: 600;
             line-height: 28px;
             text-transform: capitalize;
@@ -27,9 +27,8 @@
         line-height: 28px;
         margin-bottom: 8px;
         a {
-            color: var(--title-color, #070C3E);
-            // font-family: Baloo Bhaijaan 2;
-            font-size: 30px;
+            color: $color-title;
+            @include toRem(font-size, 30);
             font-weight: 600;
             text-transform: capitalize;
         }
@@ -47,7 +46,7 @@
     }
 
     .para-text {
-        font-size: 15px;
+        @include toRem(font-size, 15);
         line-height: 27px;
     }
 }

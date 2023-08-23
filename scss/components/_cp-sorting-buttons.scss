@@ -4,7 +4,7 @@
         .sort-by-text {
             color: #646464;
             font-family: $font-plus-jakarta;;
-            font-size: 15px;
+            @include toRem(font-size, 15);
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -18,8 +18,7 @@
             span {
                 color: #9A9A9A;
                 font-family: $font-plus-jakarta;
-                font-size: 14px;
-                font-style: normal;
+                @include toRem(font-size, 14);
                 font-weight: 400;
                 line-height: normal;
             }
@@ -44,11 +43,11 @@
             border: 1px solid #DBDBDB;
             border-radius: 8px;
             padding: 5px 8px;
-            // width: 36px;
-            // height: 36px;
+            width: 36px;
+            height: 36px;
             color: #292D32;
             i {
-                font-size: 13px;
+                font-size: 15px;
                 font-weight: bold;
             }
             &.active {

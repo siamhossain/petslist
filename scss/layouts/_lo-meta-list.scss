@@ -7,7 +7,7 @@
         }
     }
     .para-text {
-        font-size: 14px;
+        @include toRem(font-size, 14);
         line-height: normal;
     }
     .entry-admin {

@@ -21,7 +21,7 @@
             line-height: 65px;
             
             @include media-only ('sm', min) {
-                font-size: 50px;
+                @include toRem(font-size, 50);
             }
         }
         .banner-title-shape {
@@ -74,7 +74,7 @@
         .title-content {
             width: 268px;
             .title {
-                font-size: 30px;
+                @include toRem(font-size, 30);
                 font-weight: 700;
                 line-height: 36px;
                 margin-bottom: 13px;
@@ -102,7 +102,7 @@
             }
             width: 268px;
             .title {
-                font-size: 30px;
+                @include toRem(font-size, 30);
                 font-weight: 700;
                 line-height: 36px;
                 margin-bottom: 13px;
@@ -131,7 +131,7 @@
             width: 245px;
             .title {
                 color: #0B0B14;
-                font-size: 25px;
+                @include toRem(font-size, 25);
                 font-weight: 700;
                 line-height: 30px;
                 margin-bottom: 11px;
@@ -164,7 +164,7 @@
         .title-content {
             width: 268px;
             .title {
-                font-size: 25px;
+                @include toRem(font-size, 25);
                 font-weight: 700;
                 line-height: 30px;
                 margin-bottom: 11px;
@@ -202,7 +202,7 @@
         .title-content {
             width: 268px;
             .title {
-                font-size: 25px;
+                @include toRem(font-size, 25);
                 font-weight: 700;
                 line-height: 30px;
                 margin-bottom: 11px;
@@ -283,7 +283,7 @@
         .title-content {
             width: 268px;
             .title {
-                font-size: 25px;
+                @include toRem(font-size, 25);
                 font-weight: 700;
                 line-height: 30px;
                 margin-bottom: 11px;

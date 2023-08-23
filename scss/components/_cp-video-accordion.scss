@@ -12,7 +12,7 @@
             .accordion-header {
                 .accordion-button {
                     color: $color-title;
-                    font-size: 24px;
+                    @include toRem(font-size, 24);
                     font-weight: 600;
                     text-transform: capitalize;
                     line-height: normal;

@@ -8,7 +8,7 @@
     .content {
         .category-name {
             color: var(--title-color, #070C3E);
-            font-size: 16px;
+            @include toRem(font-size, 16);
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -16,7 +16,7 @@
         }
         .item-number {
             color: #6A6E9A;
-            font-size: 13px;
+            @include toRem(font-size, 13);
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -65,7 +65,7 @@
             gap: 5px;
             .category-name {
                 color: #515167;
-                font-size: 17px;
+                @include toRem(font-size, 17);
                 font-weight: 500;
                 line-height: normal;
                 margin-bottom: 0;
@@ -155,7 +155,7 @@
     height: 111px;
     color: $color-white;
     font-family: $font-bhaijaan;
-    font-size: 20px;
+    @include toRem(font-size, 20);
     font-weight: 500;
     line-height: 0px; 
     text-transform: capitalize;

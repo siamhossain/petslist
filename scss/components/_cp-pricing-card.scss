@@ -28,14 +28,14 @@
                 font-weight: 600;
             }
             .pricing-price {
-                font-size: 50px;
+                @include toRem(font-size, 50);
                 line-height: 34px;
                 text-transform: capitalize;
                 margin-bottom: 13px;
                 span.pricing-plan {
                     color: #515167;
                     font-family: $font-plus-jakarta;
-                    font-size: 15px;
+                    @include toRem(font-size, 15);
                     font-weight: 500;
                     line-height: 34px;
                     letter-spacing: 0.6px;
@@ -64,7 +64,7 @@
             li {
                 color: #515167;
                 font-family: $font-plus-jakarta;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 font-weight: 500;
                 margin-bottom: 13px;
                 text-transform: capitalize;
@@ -85,7 +85,7 @@
             color:#FF3D41;
             width: 100%;
             font-family: $font-plus-jakarta;
-            font-size: 18px;
+            @include toRem(font-size, 18);
             font-weight: 700;
             line-height: 40px;
             text-transform: capitalize;
@@ -99,7 +99,7 @@
                 color: $color-white;
                 transform: scale(1.07);
                 letter-spacing: 4px;
-                font-size: 15px;
+                @include toRem(font-size, 15);
             }
 
             

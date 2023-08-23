@@ -14,13 +14,13 @@
     .post-author-content {
         flex: 1;
         .post-author-name {
-            font-size: 20px;
+            @include toRem(font-size, 20);
             font-weight: 600;
             line-height: 28px;
             margin-bottom: 5px;
         }
         .designation {
-            font-size: 15px;
+            @include toRem(font-size, 15);
         }
         .single-share-area {
             ul {
@@ -48,7 +48,7 @@
                 li:nth-child(1) {
                     font-family: $text-font;
                     font-weight: 500;
-                    font-size: 15px;
+                    @include toRem(font-size, 15);
                     line-height: 18px;
                     text-align: right;
                     color: #222222;

@@ -24,7 +24,7 @@
     &--style-2 {
         .title-content {
             .title {
-                font-size: 36px;
+                @include toRem(font-size, 36);
                 line-height: 46px;
                 margin-bottom: 10px;
             }
@@ -50,7 +50,7 @@
             border-color: #D9D9D9;
             .accordion-header {
                 .accordion-button {
-                    font-size: 22px;
+                    @include toRem(font-size, 22);
                     font-weight: 500;
                     line-height: normal;
                     text-transform: capitalize;
@@ -89,7 +89,7 @@
             .accordion-item {
                 .accordion-header {
                     .accordion-button {
-                        font-size: 24px;
+                        @include toRem(font-size, 24);
                         color: $color-text;
                         &::after {
                             background-image: url("../images/faq/plus-circle.svg");

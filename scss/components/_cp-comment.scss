@@ -23,7 +23,7 @@
                 }
                 .comment-meta {
                     span {
-                        font-size: 15px;
+                        @include toRem(font-size, 15);
                         line-height: 28px;
                     }
                 }

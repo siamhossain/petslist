@@ -25,7 +25,7 @@
 .para-text {
     color: #515167;
     font-family: $font-plus-jakarta;
-    font-size: 16px;
+    @include toRem(font-size, 16);
     font-weight: 500;
     line-height: 24px; 
     text-transform: capitalize;

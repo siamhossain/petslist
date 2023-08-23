@@ -14,9 +14,30 @@
                 color: $color-title;
                 font-family: $font-bhaijaan;
                 font-weight: 600;
-                font-size: 25px;
+                @include toRem(font-size, 25);
                 @include media-only ('sm', min) {
-                    font-size: 30px;
+                    @include toRem(font-size, 30);
+                }
+            }
+        }
+
+        .entry-meta {
+            gap: 18px;
+            margin-bottom: 12px;
+            li {
+                i {
+                    margin-right: 6px;
+                    font-size: 20px;
+                }
+                a {
+                    color: $color-title;
+                    font-family: $font-plus-jakarta;
+                    @include toRem(font-size, 16);
+                    font-weight: 600;
+                    line-height: normal;
+                    &:hover {
+                        color: $color-primary;
+                    }
                 }
             }
         }
@@ -34,7 +55,7 @@
             background: #D0EFEE;
             color: $color-title;
             font-family: $font-bhaijaan;
-            font-size: 18px;
+            @include toRem(font-size, 18);
             font-weight: 600;
             line-height: 25px;
             padding: 14px 30px;

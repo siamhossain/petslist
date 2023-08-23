@@ -12,20 +12,20 @@
     .title-content {
         .sub-title {
             color: $color-white;
-            font-size: 26px;
+            @include toRem(font-size, 26);
             font-weight: 700;
             line-height: 44px;
             @include media-only ("lg", min) {
-                font-size: 36px;
+                @include toRem(font-size, 36);
             }
         }
         .title {
             color: $color-white;
-            font-size: 35px;
+            @include toRem(font-size, 35);
             font-weight: 700;
             line-height: 62px;
             @include media-only ("lg", min) {
-                font-size: 48px;
+                @include toRem(font-size, 48);
             }
         }
     }
@@ -39,7 +39,7 @@
 
         color: $color-white;
         font-family: $font-plus-jakarta;
-        font-size: 18px;
+        @include toRem(font-size, 18);
         font-weight: 800;
         line-height: normal;
         i {
@@ -82,7 +82,7 @@
             padding: 17px 38px 13px 38px;
             color: $color-white;
             font-family: $font-bhaijaan;
-            font-size: 18px;
+            @include toRem(font-size, 18);
             font-style: normal;
             font-weight: 600;
             line-height: 25px;

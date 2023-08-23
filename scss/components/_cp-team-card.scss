@@ -23,7 +23,7 @@
             margin-bottom: 3px;
             a {
                 color: #000;
-                font-size: 24px;
+                @include toRem(font-size, 24);
                 font-weight: 600;
                 text-transform: capitalize;
                 &:hover {
@@ -32,7 +32,7 @@
             }
         }
         .designation {
-            font-size: 18px;
+            @include toRem(font-size, 18);
             font-weight: 400;
         }
     }

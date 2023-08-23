@@ -6,7 +6,7 @@
     display: inline-block;
     color: $color-white;
     font-family: $font-bhaijaan;
-    font-size: 18px;
+    @include toRem(font-size, 18);
     font-weight: 600;
     line-height: 25px;
     padding: 12px 39px 11px 39px;

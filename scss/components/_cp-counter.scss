@@ -2,7 +2,7 @@
     .item-title {
         h3 {
             color: $color-white;
-            font-size: 48px;
+            @include toRem(font-size, 48);
             font-weight: 600;
             line-height: 36px;
             text-transform: capitalize;
@@ -11,7 +11,7 @@
         .label {
             color: #B5B6BD;
             font-family: $font-bhaijaan;
-            font-size: 20px;
+            @include toRem(font-size, 20);
             font-weight: 400;
             line-height: 28px;
             text-transform: capitalize;

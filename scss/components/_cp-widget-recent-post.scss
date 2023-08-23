@@ -24,10 +24,11 @@
                 }
                 span {
                     @extend .para-text;
-                    font-size: 14px;
+                    @include toRem(font-size, 14);
                     i {
                         color: $color-primary;
                         font-size: 16px;
+                        margin-right: 3px;
                     }
                 }
             }

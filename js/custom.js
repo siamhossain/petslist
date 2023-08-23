@@ -475,6 +475,14 @@
             });
         },
 
+        filterMenu: function () {
+            var filterButton = $(".filter-btn");
+
+            filterButton.on("click", function() {
+                $(".sidebar-filter-layout").toggleClass("active");
+            });
+        },
+
 
 		bodyClass: function () {
 			$body.addClass('document-loaded');
@@ -499,6 +507,7 @@
         rtPetslist.functions.dateCountdown();
         rtPetslist.functions.marqueeElement();
         rtPetslist.functions.fontSizeController();
+        rtPetslist.functions.filterMenu();
         
 	});
 
@@ -530,50 +539,6 @@
     scrollContainer: null,
     });
     wow.init();
-
-
-
-    // Menu expand on scroll and active/remove class on scroll content height
-
-    var sections = $('.single-element-section .content-wrapper section');
-    var parentLayout = $(".layout-area .widget-area");
-
-    $(window).on('scroll', function () {
-
-        var current_position = $(this).scrollTop();
-
-        //add active or remove class according content height
-        sections.each(function () {
-            var top = $(this).offset().top - 160;
-            var bottom = top + $(this).outerHeight();
-            var sectionId = $(this).attr('id');
-            
-            if (current_position >= top && current_position <= bottom) {
-                $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').addClass("active");
-            } else {
-                $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').removeClass("active");
-            }
-        })
-
-        //line on scroll
-        parentLayout.each(function() {
-            var divHeight = $(this).outerHeight();
-            var widgetTop = $(this).offset().top - 160;
-            var widgetBottom = widgetTop + divHeight;
-            var widthPercentage = 0;
-            var widgetId = $(this).attr('id');
-    
-            if (current_position >= widgetTop && current_position <= widgetBottom) {
-                var storeY = current_position - widgetTop;
-                widthPercentage = (storeY / divHeight) * 100;
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
-                $(".active .progress-indicator").width(widthPercentage + "%");
-            } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
-            }
-        })
-    })
-
 
 
 })(jQuery);

@@ -9,7 +9,7 @@
     blockquote {
         color: #101010;
         font-family: $font-bhaijaan;
-        font-size: 22px;
+        @include toRem(font-size, 22);
         font-style: italic;
         font-weight: 600;
         line-height: 36px;

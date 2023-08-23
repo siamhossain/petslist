@@ -44,7 +44,7 @@
 .template-search .search-form input[type=search] {
   width: 60%;
   color: #a1a1a1;
-  font-size: 20px;
+  @include toRem(font-size, 20);
   text-align: left;
   border: none;
   margin: 0 auto;
@@ -64,7 +64,7 @@
   box-shadow: none;
   border: none;
   cursor: pointer;
-  font-size: 15px;
+  @include toRem(font-size, 15);
   font-weight: 900;
   background-color: transparent;
   -webkit-transition: all 0.3s ease-out;
@@ -106,7 +106,7 @@
   color: $color-black;
   border: none;
   visibility: visible;
-  font-size: 30px;
+  @include toRem(font-size, 30);
   font-weight: 600;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;

@@ -8,7 +8,7 @@
             .accordion-header {
                 .accordion-button {
                     color: $color-title;
-                    font-size: 24px;
+                    @include toRem(font-size, 24);
                     font-weight: 600;
                     text-transform: capitalize;
                     line-height: normal;
@@ -46,7 +46,7 @@
             .accordion-body {
                 padding: 1rem 0;
                 .info-text {
-                    font-size: 15px;
+                    @include toRem(font-size, 15);
                     line-height: 27px;
                     margin-bottom: 20px;
                     @extend .para-text;
@@ -62,7 +62,7 @@
                             
                             p {
                                 @extend .para-text;
-                                font-size: 14px;
+                                @include toRem(font-size, 14);
                                 width: 30%;
                             }
 

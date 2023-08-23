@@ -25,7 +25,7 @@
     .form-check-label {
         color: #7A7A87;
         font-family: $font-plus-jakarta;
-        font-size: 14px;
+        @include toRem(font-size, 14);
         font-weight: 500;
         line-height: 30px; 
     }

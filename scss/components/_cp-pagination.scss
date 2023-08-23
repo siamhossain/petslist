@@ -19,7 +19,7 @@
             a {
                 color: $color-title;
                 font-family: $font-plus-jakarta;
-                font-size: 20px;
+                @include toRem(font-size, 20);
                 font-weight: 500;
                 line-height: normal;
                 width: 50px;

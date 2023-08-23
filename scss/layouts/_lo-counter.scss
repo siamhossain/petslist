@@ -8,7 +8,7 @@
         z-index: 0;
         .title {
             color: $color-white;
-            font-size: 30px;
+            @include toRem(font-size, 30);
             line-height: 36px;
             text-transform: capitalize;
         }
