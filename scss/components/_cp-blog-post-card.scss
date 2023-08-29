@@ -57,10 +57,12 @@
             font-family: $font-bhaijaan;
             @include toRem(font-size, 18);
             font-weight: 600;
-            line-height: 25px;
-            padding: 14px 30px;
-            svg {
+            line-height: 1px;
+            padding: 17px 30px;
+            i {
                 margin-left: 5px;
+                font-size: 16px;
+                padding-top: 2px;
             }
 
             &:hover {

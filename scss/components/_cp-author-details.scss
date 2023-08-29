@@ -90,7 +90,13 @@
             font-weight: 600;
             line-height: normal;
             margin-top: 10px;
+            &:hover {
+                color: $color-primary;
+            }
         }
+    }
+    .author-social {
+        border-bottom: 1px solid #D6E2E2;
     }
     .author-details-contact {
         padding: 30px;
